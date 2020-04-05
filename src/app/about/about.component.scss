@@ -6,6 +6,7 @@
   background-color: $green-light;
   border-radius: 0 0 5px 5px;
   padding: 1.5rem;
+  height: 250px;
 }
 
 .about__heading {
@@ -20,4 +21,10 @@
 .about__list-item {
   font-size: .85rem;
   line-height: 1.4rem;
+}
+
+@media (min-width: 900px) {
+  .about {
+    border-radius: 0 0 5px;
+  }
 }

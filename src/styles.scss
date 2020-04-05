@@ -8,7 +8,12 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: $font-family;
   background-color: $gray-light;
+  height: 100%;
 }

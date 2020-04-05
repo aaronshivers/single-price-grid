@@ -1,26 +1,33 @@
 @import "src/assets/scss/variables";
 
-.flexbox {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-item {
-  margin: auto;
-}
-
 .main {
+  display: grid;
+  grid-template-areas: 'info'
+                       'signup'
+                       'about';
   margin: 4rem 1.75rem;
+  max-width: 700px;
+  height: fit-content;
 }
 
 .main__info {
-  width: 100%;
+  grid-area: info;
+  align-self: end;
 }
 
 .main__signup {
-  width: 100%;
+  grid-area: signup;
 }
 
 .main__about {
-  width: 100%;
+  grid-area: about;
+}
+
+@media (min-width: 900px) {
+  .main {
+    grid-template-areas: 'info info'
+                         'signup about';
+    margin: auto;
+    height: 100vh;
+  }
 }

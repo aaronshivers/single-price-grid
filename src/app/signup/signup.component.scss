@@ -5,6 +5,7 @@
   color: white;
   background-color: $green;
   padding: 1.5rem;
+  height: 250px;
 }
 
 .signup__heading {
@@ -40,3 +41,8 @@
   width: 100%;
 }
 
+@media (min-width: 900px) {
+  .signup {
+    border-radius: 0 0 0 5px;
+  }
+}
