@@ -1,0 +1,42 @@
+@import "src/assets/scss/variables";
+@import "src/assets/scss/mixins";
+
+.signup {
+  color: white;
+  background-color: $green;
+  padding: 1.5rem;
+}
+
+.signup__heading {
+  @include heading(white);
+}
+
+.signup__price {
+  color: lighten($green, 40%);
+  margin: 1rem 0 .5rem;
+}
+
+.signup__money {
+  color: white;
+  font-size: 2rem;
+  font-weight: $font-weight-bold;
+  margin-right: .5rem;
+}
+
+.signup__body {
+  font-size: 1rem;
+  margin: .5rem 0 2rem;
+}
+
+.signup__button {
+  color: white;
+  font-size: 1rem;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  background-color: $yellow;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 100%;
+}
+

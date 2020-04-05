@@ -1,0 +1,24 @@
+@import "src/assets/scss/variables";
+@import "src/assets/scss/mixins";
+
+.info {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 1.5rem;
+}
+
+.info__heading {
+  @include heading($green);
+}
+
+.info__subheading {
+  color: $yellow;
+  font-size: .96rem;
+  margin: 1rem 0;
+}
+
+.info__body {
+  color: $gray-blue;
+  font-size: .88rem;
+  line-height: 1.5rem;
+}

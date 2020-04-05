@@ -1,0 +1,23 @@
+@import "src/assets/scss/variables";
+@import "src/assets/scss/mixins";
+
+.about {
+  color: white;
+  background-color: $green-light;
+  border-radius: 0 0 5px 5px;
+  padding: 1.5rem;
+}
+
+.about__heading {
+  @include heading(white);
+}
+
+.about__list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.about__list-item {
+  font-size: .85rem;
+  line-height: 1.4rem;
+}
