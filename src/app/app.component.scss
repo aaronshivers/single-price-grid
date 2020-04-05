@@ -1,0 +1,30 @@
+@import "src/assets/scss/variables";
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  margin: auto;
+}
+
+.main {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.main__info {
+  background-color: white;
+}
+
+.main__signup {
+  color: white;
+  background-color: $green;
+}
+
+.main__about {
+  color: white;
+  background-color: lighten($green, 5%);
+}
