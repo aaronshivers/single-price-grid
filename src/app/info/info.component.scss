@@ -9,7 +9,8 @@
 }
 
 .info__heading {
-  @include heading($green);
+  color: $green;
+  font-size: 1.28rem;
 }
 
 .info__subheading {
@@ -22,4 +23,26 @@
   color: $gray-blue;
   font-size: .88rem;
   line-height: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .info {
+    padding: 3rem;
+    height: auto;
+  }
+
+  .info__heading {
+    color: $green;
+    font-size: 1.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info__subheading {
+    font-size: 1.35rem;
+  }
+
+  .info__body {
+    font-size: 1.13rem;
+    line-height: 2.2rem;
+  }
 }
